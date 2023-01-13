@@ -1,5 +1,4 @@
 extends ../layout/layout
-
 include ../components
 
 block variables
@@ -8,3 +7,7 @@ block variables
 
 block content
   include ../modules/header/header
+  main(class=pageClass)
+    include ../modules/art/art
+    include ../modules/button
+  include ../modules/footer/footer
