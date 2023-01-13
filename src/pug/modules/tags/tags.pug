@@ -1,0 +1,9 @@
+include tags-data
+
+- var title = 'Популярные тэги'
+
+section.header__tags.tags
+  h2.tags__title= title
+  ul.tags__list
+    each item in items
+      +tag(item)

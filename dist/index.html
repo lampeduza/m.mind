@@ -8,9 +8,60 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preload" href="fonts/source-sans-pro/400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/source-sans-pro/600.woff2" as="font" type="font/woff2" crossorigin>
-    <title>mMind</title>
+    <title>m.Mind</title>
   </head>
-  <body>
+  <body class="main">
+    <header class="header"><a class="header__logo logo" href="#logo">
+        <svg width="131" height="28" aria-hidden="true">
+          <use href="img/sprite.svg#logotype"></use>
+        </svg></a>
+      <form class="header__search search">
+        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+        <input id="search-field" type="text" name="search-field" placeholder="Поиск">
+        <svg width="16" height="16" aria-hidden="true">
+          <use href="img/sprite.svg#search"></use>
+        </svg>
+      </form>
+      <ul class="header__navigation navigation">
+        <li class="navigation__item"><a class="navigation__link" href="#bookmarks">
+            <svg width="40" height="40" aria-hidden="true">
+              <use href="img/sprite.svg#bookmarks"></use>
+            </svg></a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#notifications">
+            <svg width="40" height="40" aria-hidden="true">
+              <use href="img/sprite.svg#notifications"></use>
+            </svg></a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#settings">
+            <picture>
+              <source type="image/webp" srcset="img/avatar.webp, img/avatar@2x.webp 2x"/><img src="img/avatar.jpg" srcset="img/avatar@2x.jpg 2x" width="40" height="40" alt="Аватар пользователя" title="Аватар пользователя"/>
+            </picture></a></li>
+      </ul>
+      <section class="header__tags tags">
+        <h2 class="tags__title">Популярные тэги</h2>
+        <ul class="tags__list">
+          <li class="tags__element"><a class="tags__link" href="#design">Дизайн</a></li>
+          <li class="tags__element"><a class="tags__link" href="#photo">Фотография</a></li>
+          <li class="tags__element"><a class="tags__link" href="#creativity">Творчество</a></li>
+          <li class="tags__element"><a class="tags__link" href="#architecture">Архитектура</a></li>
+          <li class="tags__element"><a class="tags__link" href="#interior">Интерьер</a></li>
+          <li class="tags__element"><a class="tags__link" href="#decor">Декор</a></li>
+          <li class="tags__element"><a class="tags__link" href="#style">Стиль</a></li>
+          <li class="tags__element"><a class="tags__link" href="#fashion">Мода</a></li>
+          <li class="tags__element"><a class="tags__link" href="#trend">Тренд</a></li>
+          <li class="tags__element"><a class="tags__link" href="#aesthetics">Эстетика</a></li>
+          <li class="tags__element"><a class="tags__link" href="#people">Люди</a></li>
+          <li class="tags__element"><a class="tags__link" href="#portrait">Портрет</a></li>
+          <li class="tags__element"><a class="tags__link" href="#road">Дорога</a></li>
+          <li class="tags__element"><a class="tags__link" href="#travel">Путешествия</a></li>
+          <li class="tags__element"><a class="tags__link" href="#nature">Природа</a></li>
+          <li class="tags__element"><a class="tags__link" href="#mountains">Горы</a></li>
+          <li class="tags__element"><a class="tags__link" href="#ocean">Океан</a></li>
+          <li class="tags__element"><a class="tags__link" href="#sea">Море</a></li>
+          <li class="tags__element"><a class="tags__link" href="#animals">Животные</a></li>
+          <li class="tags__element"><a class="tags__link" href="#black-and-white">Черно-белое</a></li>
+        </ul>
+      </section>
+    </header>
     <script src="js/main.js"></script>
   </body>
 </html>

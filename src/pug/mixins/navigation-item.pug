@@ -1,0 +1,7 @@
+mixin navigation-item(item)
+  li.navigation__item
+    a.navigation__link(href= item.link)
+      if item.link !== '#settings'
+        +icon(`${item.link  === '#bookmarks' ? 'bookmarks' : 'notifications'}`, '40', '40')
+      else
+        +picture('avatar', 'jpg', '40', '40', 'Аватар пользователя', 'Аватар пользователя')

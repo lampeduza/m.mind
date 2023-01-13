@@ -1,7 +1,10 @@
 extends ../layout/layout
 
+include ../components
+
 block variables
-  - var title = 'mMind';
+  - var title = 'm.Mind';
   - var pageClass = 'main';
 
 block content
+  include ../modules/header/header
