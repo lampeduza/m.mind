@@ -1,0 +1,16 @@
+@use './global/library.scss' as lib;
+
+.navigation {
+	@include lib.reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 40px);
+	gap: 15px;
+}
+
+.navigation__link {
+	display: flex;
+
+	picture {
+		border-radius: 50%;
+	}
+}

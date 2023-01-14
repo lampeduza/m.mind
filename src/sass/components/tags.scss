@@ -1,0 +1,31 @@
+@use './global/library.scss' as lib;
+
+$tag-background: #F2F2F2;
+$tag-border-radius: 30px;
+
+.tags__title {
+	margin-bottom: 20px;
+}
+
+.tags__list {
+	@include lib.reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.tags__element {
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.tags__link {
+	display: block;
+	padding: 9px 20px 11px 20px;
+	background-color: $tag-background;
+	border-radius: $tag-border-radius;
+	font-size: 16px;
+	line-height: 20px;
+	color: inherit;
+}

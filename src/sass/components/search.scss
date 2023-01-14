@@ -1,0 +1,35 @@
+$input-background: #fff;
+$input-border: 1px solid #0c0c0d;
+$input-border-radius: 30px;
+
+.search {
+	max-width: 500px;
+	align-self: center;
+	position: relative;
+
+	input {
+		box-sizing: inherit;
+		width: 100%;
+		padding: 10px 44px;
+		background-color: $input-background;
+		border: $input-border;
+		border-radius: $input-border-radius;
+		color: rgba(12, 12, 13, .3);
+
+		&::placeholder {
+			color: rgba(12, 12, 13, .3);
+		}
+	}
+
+	button {
+		border: none;
+		display: flex;
+		background-color: transparent;
+		cursor: pointer;
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 20px;
+	}
+}

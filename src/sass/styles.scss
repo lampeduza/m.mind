@@ -1,4 +1,13 @@
+/* global */
 @use './global/library.scss';
 @use './global/scaffolding.scss';
 @use './global/visually-hidden.scss';
 @use './global/map.scss';
+
+/* components */
+@use './components/header.scss';
+@use './components/main.scss';
+@use './components/footer.scss';
+@use './components/search.scss';
+@use './components/navigation.scss';
+@use './components/tags.scss';

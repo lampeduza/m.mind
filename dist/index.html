@@ -18,9 +18,11 @@
       <form class="header__search search">
         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
         <input id="search-field" type="text" name="search-field" placeholder="Поиск">
-        <svg width="16" height="16" aria-hidden="true">
-          <use href="img/sprite.svg#search"></use>
-        </svg>
+        <button type="button" aria-label="Искать">
+          <svg width="16" height="16" aria-hidden="true">
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
       </form>
       <ul class="header__navigation navigation">
         <li class="navigation__item"><a class="navigation__link" href="#bookmarks">
@@ -219,10 +221,12 @@
         </ul>
       </section>
       <button class="button button--more" type="button">Загрузить еще</button>
-    </main><a class="logo" href="#logo">
-      <svg width="131" height="28" aria-hidden="true">
-        <use href="img/sprite.svg#logotype"></use>
-      </svg></a><a class="copyright" href="#copyright">© 2021 Все права защищены</a>
+    </main>
+    <footer class="footer"><a class="logo" href="#logo">
+        <svg width="131" height="28" aria-hidden="true">
+          <use href="img/sprite.svg#logotype"></use>
+        </svg></a><a class="copyright" href="#copyright">© 2021 Все права защищены</a>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

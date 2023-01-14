@@ -1,0 +1,23 @@
+.header {
+	padding-top: 30px;
+	padding-bottom: 60px;
+
+	grid-column: 1 / -1;
+	grid-row: 1 / 2;
+
+	display: grid;
+	grid-template-columns: 131px 1fr 150px;
+	grid-template-rows: repeat(2, auto);
+	gap: 0 300px;
+	align-items: center;
+}
+
+.header__search {
+	margin-left: 19px;
+}
+
+
+.header__tags {
+	grid-column: 1 / -1;
+	margin-top: 55px;
+}
