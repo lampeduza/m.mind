@@ -1,9 +1,9 @@
 mixin art-list(pictures = [])
   ul.art__list
     each picture, index in pictures
-      li.art__item
-        a.art__link(href='#' + `${index + 1}`)
-          +picture(`${index + 1}`, 'jpg', `${picture.width}`, `${picture.height}`, `${picture.alternative}`, `${picture.alternative}`)
+      li.art__item(class= (picture.type === 'large' ? 'art__item--large' : picture.type === 'vertical' ? 'art__item--vertical' : picture.type === 'horizontal' ? 'art__item--horizontal' : '') )
+        a.art__link(href='#' + `${picture.anchor}`)
+          +picture(`${picture.anchor}`, 'jpg', `${picture.width}`, `${picture.height}`, `${picture.alternative}`, `${picture.alternative}`)
         button.art__like(type="button")
           +icon('heart', '12', '10')
-          = picture.likes
+          span.art__counter= picture.likes

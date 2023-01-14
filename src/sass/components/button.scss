@@ -1,0 +1,12 @@
+$button-border: 1px solid #0C0C0D;
+$button-border-radius: 30px;
+
+
+.button {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 17px;
+	border: $button-border;
+	border-radius: $button-border-radius;
+	cursor: pointer;
+}

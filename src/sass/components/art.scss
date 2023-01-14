@@ -1,0 +1,72 @@
+@use './global/library.scss' as lib;
+
+.art {
+	margin-bottom: 108px;
+}
+
+.art__list {
+	@include lib.reset-list;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-auto-rows: 180px;
+	grid-auto-flow: row dense;
+
+	gap: 20px;
+}
+
+.art__item {
+	position: relative;
+
+	&--large {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+
+	&--vertical {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	&--horizontal {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+}
+
+.art__like {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 14px;
+	left: 10px;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer;
+
+	svg {
+		margin-right: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

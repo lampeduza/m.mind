@@ -1,6 +1,6 @@
 mixin navigation-item(item)
   li.navigation__item
-    a.navigation__link(href= item.link)
+    a.navigation__link(href= item.link, aria-label= item.text)
       if item.link !== '#settings'
         +icon(`${item.link  === '#bookmarks' ? 'bookmarks' : 'notifications'}`, '40', '40')
       else
