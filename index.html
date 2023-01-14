@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Site author">
+    <meta name="description" content="content">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="fonts/source-sans-pro/400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/source-sans-pro/600.woff2" as="font" type="font/woff2" crossorigin>
+    <title>m.Mind</title>
+  </head>
+  <body>
+    <header class="header"><a class="logo" href="#logo">
+        <svg width="131" height="28" aria-hidden="true">
+          <use href="img/sprite.svg#logotype"></use>
+        </svg></a>
+      <form class="header__search search">
+        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+        <input id="search-field" type="text" name="search-field" placeholder="Поиск">
+        <button type="button" aria-label="Искать">
+          <svg width="16" height="16" aria-hidden="true">
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <ul class="header__navigation navigation">
+        <li class="navigation__item"><a class="navigation__link" href="#bookmarks">
+            <svg width="40" height="40" aria-hidden="true">
+              <use href="img/sprite.svg#bookmarks"></use>
+            </svg></a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#notifications">
+            <svg width="40" height="40" aria-hidden="true">
+              <use href="img/sprite.svg#notifications"></use>
+            </svg></a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#settings">
+            <picture>
+              <source type="image/webp" srcset="img/avatar.webp, img/avatar@2x.webp 2x"/><img src="img/avatar.jpg" srcset="img/avatar@2x.jpg 2x" width="40" height="40" alt="Аватар пользователя" title="Аватар пользователя"/>
+            </picture></a></li>
+      </ul>
+      <section class="header__tags tags">
+        <h2 class="tags__title">Популярные тэги</h2>
+        <ul class="tags__list">
+          <li class="tags__element"><a class="tags__link" href="#design">Дизайн</a></li>
+          <li class="tags__element"><a class="tags__link" href="#photo">Фотография</a></li>
+          <li class="tags__element"><a class="tags__link" href="#creativity">Творчество</a></li>
+          <li class="tags__element"><a class="tags__link" href="#architecture">Архитектура</a></li>
+          <li class="tags__element"><a class="tags__link" href="#interior">Интерьер</a></li>
+          <li class="tags__element"><a class="tags__link" href="#decor">Декор</a></li>
+          <li class="tags__element"><a class="tags__link" href="#style">Стиль</a></li>
+          <li class="tags__element"><a class="tags__link" href="#fashion">Мода</a></li>
+          <li class="tags__element"><a class="tags__link" href="#trend">Тренд</a></li>
+          <li class="tags__element"><a class="tags__link" href="#aesthetics">Эстетика</a></li>
+          <li class="tags__element"><a class="tags__link" href="#people">Люди</a></li>
+          <li class="tags__element"><a class="tags__link" href="#portrait">Портрет</a></li>
+          <li class="tags__element"><a class="tags__link" href="#road">Дорога</a></li>
+          <li class="tags__element"><a class="tags__link" href="#travel">Путешествия</a></li>
+          <li class="tags__element"><a class="tags__link" href="#nature">Природа</a></li>
+          <li class="tags__element"><a class="tags__link" href="#mountains">Горы</a></li>
+          <li class="tags__element"><a class="tags__link" href="#ocean">Океан</a></li>
+          <li class="tags__element"><a class="tags__link" href="#sea">Море</a></li>
+          <li class="tags__element"><a class="tags__link" href="#animals">Животные</a></li>
+          <li class="tags__element"><a class="tags__link" href="#black-and-white">Черно-белое</a></li>
+        </ul>
+      </section>
+    </header>
+    <main class="main">
+      <section class="art">
+        <h2 class="visually-hidden">Изображения</h2>
+        <ul class="art__list">
+          <li class="art__item"><a class="art__link" href="#1">
+              <picture>
+                <source type="image/webp" srcset="img/1.webp, img/1@2x.webp 2x"/><img src="img/1.jpg" srcset="img/1@2x.jpg 2x" width="548" height="380" alt="city" title="city"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>32 574
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#2">
+              <picture>
+                <source type="image/webp" srcset="img/2.webp, img/2@2x.webp 2x"/><img src="img/2.jpg" srcset="img/2@2x.jpg 2x" width="548" height="380" alt="whale" title="whale"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>45 670
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#3">
+              <picture>
+                <source type="image/webp" srcset="img/3.webp, img/3@2x.webp 2x"/><img src="img/3.jpg" srcset="img/3@2x.jpg 2x" width="264" height="380" alt="alternative description" title="alternative description"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>42 666
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#4">
+              <picture>
+                <source type="image/webp" srcset="img/4.webp, img/4@2x.webp 2x"/><img src="img/4.jpg" srcset="img/4@2x.jpg 2x" width="548" height="380" alt="killer whale" title="killer whale"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>12 054
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#5">
+              <picture>
+                <source type="image/webp" srcset="img/5.webp, img/5@2x.webp 2x"/><img src="img/5.jpg" srcset="img/5@2x.jpg 2x" width="264" height="380" alt="boat" title="boat"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>12 839
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#6">
+              <picture>
+                <source type="image/webp" srcset="img/6.webp, img/6@2x.webp 2x"/><img src="img/6.jpg" srcset="img/6@2x.jpg 2x" width="264" height="380" alt="boy" title="boy"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>94 326
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#7">
+              <picture>
+                <source type="image/webp" srcset="img/7.webp, img/7@2x.webp 2x"/><img src="img/7.jpg" srcset="img/7@2x.jpg 2x" width="264" height="380" alt="woman" title="woman"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>29 683
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#8">
+              <picture>
+                <source type="image/webp" srcset="img/8.webp, img/8@2x.webp 2x"/><img src="img/8.jpg" srcset="img/8@2x.jpg 2x" width="548" height="380" alt="girl on your knees" title="girl on your knees"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>89 367
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#9">
+              <picture>
+                <source type="image/webp" srcset="img/9.webp, img/9@2x.webp 2x"/><img src="img/9.jpg" srcset="img/9@2x.jpg 2x" width="548" height="180" alt="church" title="church"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>84 669
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#10">
+              <picture>
+                <source type="image/webp" srcset="img/10.webp, img/10@2x.webp 2x"/><img src="img/10.jpg" srcset="img/10@2x.jpg 2x" width="548" height="180" alt="train" title="train"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>39 591
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#11">
+              <picture>
+                <source type="image/webp" srcset="img/11.webp, img/11@2x.webp 2x"/><img src="img/11.jpg" srcset="img/11@2x.jpg 2x" width="264" height="380" alt="pug" title="pug"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>9 854
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#12">
+              <picture>
+                <source type="image/webp" srcset="img/12.webp, img/12@2x.webp 2x"/><img src="img/12.jpg" srcset="img/12@2x.jpg 2x" width="548" height="180" alt="road" title="road"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>13 256
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#13">
+              <picture>
+                <source type="image/webp" srcset="img/13.webp, img/13@2x.webp 2x"/><img src="img/13.jpg" srcset="img/13@2x.jpg 2x" width="548" height="180" alt="bridge" title="bridge"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>57 900
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#14">
+              <picture>
+                <source type="image/webp" srcset="img/14.webp, img/14@2x.webp 2x"/><img src="img/14.jpg" srcset="img/14@2x.jpg 2x" width="548" height="380" alt="spiral" title="spiral"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>90 181
+            </button>
+          </li>
+          <li class="art__item"><a class="art__link" href="#15">
+              <picture>
+                <source type="image/webp" srcset="img/15.webp, img/15@2x.webp 2x"/><img src="img/15.jpg" srcset="img/15@2x.jpg 2x" width="264" height="380" alt="horse" title="horse"/>
+              </picture></a>
+            <button class="art__like" type="button">
+              <svg width="12" height="10" aria-hidden="true">
+                <use href="img/sprite.svg#heart"></use>
+              </svg>112 563
+            </button>
+          </li>
+        </ul>
+      </section>
+      <button class="button button--more" type="button">Загрузить еще</button>
+    </main>
+    <footer class="footer"><a class="logo" href="#logo">
+        <svg width="131" height="28" aria-hidden="true">
+          <use href="img/sprite.svg#logotype"></use>
+        </svg></a><a class="copyright" href="#copyright">© 2021 Все права защищены</a>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
