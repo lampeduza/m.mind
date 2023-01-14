@@ -1,3 +1,5 @@
+@use './global/library.scss' as lib;
+
 .header {
 	padding-top: 30px;
 	padding-bottom: 60px;
@@ -8,16 +10,45 @@
 	display: grid;
 	grid-template-columns: 131px 1fr 150px;
 	grid-template-rows: repeat(2, auto);
-	gap: 0 300px;
 	align-items: center;
+	gap: 0 20px;
+
+	@media (max-width: 580px) {
+		grid-template-rows: repeat(3, auto);
+		gap: 15px 10px;
+	}
 }
 
 .header__search {
 	margin-left: 19px;
+	width: 100%;
+	align-self: center;
+	justify-self: center;
+	position: relative;
+
+	@media (max-width: 580px) {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		margin: 0;
+		justify-self: stretch;
+	}
 }
 
+.header__navigation {
+	@media (max-width: 580px) {
+		grid-column: 3 / -1;
+	}
+}
 
 .header__tags {
 	grid-column: 1 / -1;
 	margin-top: 55px;
+
+	@media (max-width: lib.$tablet) {
+		margin-top: 30px;
+	}
+
+	@media (max-width: 580px) {
+		margin-top: 0;
+	}
 }

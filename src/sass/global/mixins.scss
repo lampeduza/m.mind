@@ -18,3 +18,19 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin tag-state {
+  &:hover {
+    background-color: darken(white, 7%);
+    color: lighten(black, 70%);
+    box-shadow: inset 0px 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus,
+  &:active {
+    color: lighten(black, 50%);
+    background-color: darken(white, 3%);
+    outline: 1px solid goldenrod;
+    box-shadow: 1px 1px 3px goldenrod;
+  }
+}

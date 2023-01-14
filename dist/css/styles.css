@@ -47,6 +47,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1440px;
+  min-width: 360px;
 }
 
 .sitemap {
@@ -169,18 +170,52 @@ picture {
   display: grid;
   grid-template-columns: 131px 1fr 150px;
   grid-template-rows: repeat(2, auto);
-  gap: 0 300px;
   -webkit-box-align: center;
           align-items: center;
+  gap: 0 20px;
+}
+@media (max-width: 580px) {
+  .header {
+    grid-template-rows: repeat(3, auto);
+    gap: 15px 10px;
+  }
 }
 
 .header__search {
   margin-left: 19px;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+}
+@media (max-width: 580px) {
+  .header__search {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 580px) {
+  .header__navigation {
+    grid-column: 3/-1;
+  }
 }
 
 .header__tags {
   grid-column: 1/-1;
   margin-top: 55px;
+}
+@media (max-width: 768px) {
+  .header__tags {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 580px) {
+  .header__tags {
+    margin-top: 0;
+  }
 }
 
 .main {
@@ -217,8 +252,6 @@ picture {
 
 .search {
   max-width: 500px;
-  align-self: center;
-  position: relative;
 }
 .search input {
   -webkit-box-sizing: inherit;
@@ -251,6 +284,11 @@ picture {
           transform: translateY(-50%);
   left: 20px;
 }
+@media (max-width: 580px) {
+  .search {
+    max-width: initial;
+  }
+}
 
 .navigation {
   margin: 0;
@@ -275,6 +313,13 @@ picture {
   line-height: 35px;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .tags__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+}
 
 .tags__list {
   margin: 0;
@@ -284,6 +329,11 @@ picture {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .tags__list {
+    gap: 10px 5px;
+  }
 }
 
 .tags__element:last-child {
@@ -298,6 +348,33 @@ picture {
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+}
+.tags__link:hover {
+  background-color: #ededed;
+  color: #b3b3b3;
+  -webkit-box-shadow: inset 0px 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0 3px rgba(0, 0, 0, 0.1);
+}
+.tags__link:focus, .tags__link:active {
+  color: gray;
+  background-color: #f7f7f7;
+  outline: 1px solid goldenrod;
+  -webkit-box-shadow: 1px 1px 3px goldenrod;
+          box-shadow: 1px 1px 3px goldenrod;
+}
+@media (max-width: 768px) {
+  .tags__link {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 7px 15px 9px 15px;
+  }
+}
+@media (max-width: 580px) {
+  .tags__link {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 10px 6px 10px;
+  }
 }
 
 .art {

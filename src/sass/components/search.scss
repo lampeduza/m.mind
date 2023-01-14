@@ -4,8 +4,6 @@ $input-border-radius: 30px;
 
 .search {
 	max-width: 500px;
-	align-self: center;
-	position: relative;
 
 	input {
 		box-sizing: inherit;
@@ -31,5 +29,9 @@ $input-border-radius: 30px;
 		top: 50%;
 		transform: translateY(-50%);
 		left: 20px;
+	}
+
+	@media (max-width: 580px) {
+		max-width: initial;
 	}
 }

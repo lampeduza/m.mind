@@ -8,6 +8,12 @@ $tag-border-radius: 30px;
 	font-size: 28px;
 	line-height: 35px;
 	margin-bottom: 20px;
+
+	@media (max-width: lib.$tablet) {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 16px;
+	}
 }
 
 .tags__list {
@@ -15,6 +21,10 @@ $tag-border-radius: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+
+	@media (max-width: lib.$tablet) {
+		gap: 10px 5px;
+	}
 }
 
 .tags__element {
@@ -31,4 +41,17 @@ $tag-border-radius: 30px;
 	font-size: 16px;
 	line-height: 20px;
 	color: inherit;
+	@include lib.tag-state;
+
+	@media (max-width: lib.$tablet) {
+		font-size: 14px;
+		line-height: 18px;
+		padding: 7px 15px 9px 15px;
+	}
+
+	@media (max-width: 580px) {
+		font-size: 12px;
+		line-height: 16px;
+		padding: 5px 10px 6px 10px;
+	}
 }
