@@ -197,8 +197,22 @@ picture {
 }
 
 .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
   grid-column: 1/-1;
   grid-row: 3/-1;
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.footer .logo {
+  margin-bottom: 24px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
 }
 
 .search {
