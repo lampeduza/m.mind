@@ -1,0 +1,6 @@
+li.art__item(class= (picture.type === 'large' ? 'art__item--large' : picture.type === 'vertical' ? 'art__item--vertical' : picture.type === 'horizontal' ? 'art__item--horizontal' : '') )
+  a.art__link(href='#' + `${picture.anchor}`)
+    +picture(`${picture.anchor}`, 'jpg', `${picture.width}`, `${picture.height}`, `${picture.alternative}`, `${picture.alternative}`)
+  button.art__like(type="button")
+    +icon('heart', '12', '10')
+    span.art__counter= picture.likes

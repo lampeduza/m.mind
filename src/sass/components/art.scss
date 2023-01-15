@@ -33,6 +33,10 @@
 	}
 }
 
+.art__link {
+	z-index: 1;
+}
+
 .art__like {
 	display: flex;
 	align-items: center;
@@ -46,6 +50,7 @@
 	font-size: 14px;
 	line-height: 18px;
 	cursor: pointer;
+	z-index: 2;
 
 	svg {
 		margin-right: 8px;
