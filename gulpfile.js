@@ -88,9 +88,10 @@ function copyImages() {
 
 function optimizeImages() {
   return src('dist/img/**/*.{png,jpg}')
-    .pipe(cached(imagemin({
-      interfaced: true
-    })))
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 80, progressive: true}),
+    ]))
     .pipe(dest('dist/img'));
 }
 
@@ -124,6 +125,7 @@ function syncServer() {
 	watch("src/js/*.{js, json}", series(js, refresh));
 	watch("src/img/**/*.svg", series(copySvg, sprite, html, refresh));
 	watch("src/img/**/*.{png, jpg, webp}", series(copyImages, html, refresh));
+  watch('src/favicons/**', series(copy, refresh));
 }
 
 function clean() {
@@ -134,6 +136,7 @@ function copy() {
   return src([
     'src/fonts/**',
     'src/img/**',
+    'src/favicons/**',
   ], {
     base: 'src',
   })
